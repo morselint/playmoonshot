@@ -1,0 +1,582 @@
+.w-layout-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.section.color {
+  max-width: none;
+  background-color: rgba(39, 22, 56, 0.8);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+.section.footer {
+  max-width: none;
+  background-color: rgba(32, 18, 46, 0.96);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+.body {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #271638;
+  background-image: url('../images/Moonshot-Cover.jpg');
+  background-position: 50% 0%;
+  background-size: 2048px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-clip: border-box;
+  -webkit-text-fill-color: inherit;
+}
+
+.body.press {
+  background-image: none;
+}
+
+.moonshot-logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: Merriweather, serif;
+  color: #fff;
+  font-size: 112px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.tag {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 38px;
+  margin-bottom: 32px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: #fff;
+  font-size: 46px;
+  line-height: 67px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.tag.watch-text {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 32px;
+}
+
+.trailer {
+  width: 1440px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  border-radius: 24%;
+  -webkit-transition: box-shadow 500ms ease, background-color 500ms ease, -webkit-transform 500ms ease;
+  transition: box-shadow 500ms ease, background-color 500ms ease, -webkit-transform 500ms ease;
+  transition: box-shadow 500ms ease, background-color 500ms ease, transform 500ms ease;
+  transition: box-shadow 500ms ease, background-color 500ms ease, transform 500ms ease, -webkit-transform 500ms ease;
+}
+
+.trailer:hover {
+  background-color: rgba(184, 7, 178, 0.2);
+  box-shadow: 0 0 100px 70px rgba(184, 7, 178, 0.2);
+}
+
+.play {
+  height: 82px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -ms-grid-row-align: center;
+  align-self: center;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  background-image: url('../images/Play.svg');
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
+}
+
+.play:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.watch {
+  padding-top: 100px;
+  padding-bottom: 220px;
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
+}
+
+.watch:hover {
+  -webkit-transform: scale(0.99);
+  -ms-transform: scale(0.99);
+  transform: scale(0.99);
+}
+
+.form-block {
+  max-width: 750px;
+  margin-right: auto;
+  margin-bottom: 160px;
+  margin-left: auto;
+}
+
+.form-field-label {
+  margin-top: 24px;
+  margin-bottom: 48px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: #fff;
+  font-size: 64px;
+  line-height: 68px;
+  text-align: center;
+  letter-spacing: -0.57px;
+}
+
+.coming-soon {
+  width: 135px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 20px;
+  background-color: #ff9500;
+  color: #fff;
+  font-size: 17px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: -0.14px;
+}
+
+.form-text-field {
+  height: 55px;
+  float: left;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  border-radius: 6px;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  -webkit-transition: border-color 200ms ease;
+  transition: border-color 200ms ease;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: #fff;
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: -0.14px;
+}
+
+.form-text-field:hover {
+  border-color: #ff9500;
+}
+
+.form-text-field:focus {
+  border-color: #ff9500;
+  color: #fff;
+}
+
+.submit-button {
+  height: 55px;
+  border-radius: 4px;
+  background-color: #ff9500;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: -0.14px;
+}
+
+.form-success {
+  background-color: transparent;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: #fff;
+  font-size: 64px;
+  line-height: 68px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -0.57px;
+}
+
+.form-error {
+  background-color: transparent;
+  color: #de071c;
+}
+
+.success-emoji {
+  margin-bottom: 20px;
+}
+
+.form-grid {
+  grid-auto-flow: row;
+  -ms-grid-columns: 1.5fr 0.25fr;
+  grid-template-columns: 1.5fr 0.25fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.screenshots {
+  max-width: 1440px;
+  margin: 100px auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  grid-auto-flow: row;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  grid-template-areas: "."
+    "."
+    "Area";
+  -ms-grid-columns: 1fr 24px 1fr 24px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto 24px auto 24px auto;
+  grid-template-rows: auto auto auto;
+}
+
+.image-2 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.lightbox-link {
+  border-style: none;
+  border-width: 4px;
+  border-color: #fff;
+}
+
+.link-block {
+  margin-right: auto;
+  margin-bottom: 100px;
+  margin-left: auto;
+  border-radius: 14px;
+  background-color: #fff;
+}
+
+.image-3 {
+  width: 270px;
+  margin: 14px 14px 9px;
+}
+
+.image-4 {
+  margin: 220px auto 140px;
+}
+
+.grid {
+  max-width: 1440px;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.footer-link {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: #b88ad1;
+  font-size: 18px;
+  line-height: 34px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-link:active {
+  color: hsla(0, 0%, 100%, 0.8);
+}
+
+.list-item {
+  text-align: center;
+}
+
+.morsel-logo {
+  width: 160px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  opacity: 0.5;
+}
+
+.utility-page-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100%;
+  max-width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.utility-page-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 260px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.utility-page-form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.description {
+  max-width: 900px;
+  margin-right: auto;
+  margin-bottom: 60px;
+  margin-left: auto;
+  color: #fff;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.description-title {
+  font-style: italic;
+}
+
+@media screen and (min-width: 1920px) {
+  .body {
+    background-image: url('../images/Moonshot-Cover.jpg');
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .body {
+    background-image: url('../images/Moonshot-Cover.jpg');
+    background-size: 2048px;
+  }
+
+  .trailer {
+    border-radius: 0px;
+  }
+
+  .trailer:hover {
+    border-radius: 0px;
+  }
+
+  .play {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  .watch {
+    padding-bottom: 100px;
+  }
+
+  .form-block {
+    margin-top: 200px;
+  }
+
+  .screenshots {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+  }
+
+  .description {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 21px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .trailer {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .body {
+    background-image: url('../images/Moonshot-Cover.jpg');
+    background-size: 1170px;
+  }
+
+  .tag.watch-text {
+    margin-top: -20px;
+    font-size: 28px;
+  }
+
+  .trailer {
+    margin-bottom: 20px;
+  }
+
+  .play {
+    background-size: 50px;
+  }
+
+  .watch {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .screenshots {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .link-block {
+    margin-top: 0px;
+    margin-bottom: 60px;
+  }
+
+  .image-3 {
+    width: 200px;
+    margin: 8px 8px 4px;
+  }
+
+  .description {
+    padding-right: 16px;
+    padding-left: 16px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+#w-node-fae89469-1696-bdd6-b924-69682455137b-9d78eedb {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-_84113b6b-ed44-ec85-e0c3-5cc1424c213d-9d78eedb {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-d5b9ae95-0ba3-8f7b-c918-70a032d3a481-9d78eedb {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-_9c82334b-09c7-a943-d89e-8ef565572ab2-9d78eedb {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+@media screen and (min-width: 1920px) {
+  #w-node-afbf4876-0954-3a8d-3a97-2b0b9e29277f-9d78eedb {
+    -ms-grid-column: span 1;
+    grid-column-start: span 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: span 1;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+  }
+}
